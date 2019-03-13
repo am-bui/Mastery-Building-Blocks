@@ -12,3 +12,20 @@ Given an object and a key, “removeProperty” removes the given key from the g
 function removeProperty(obj, key) {
   delete obj[key]
 }
+
+
+/*
+Your Code Should Pass:
+describe("removeProperty", function() {
+  it("should remove the property from the passed in object at the passed in key", function() {
+
+    var testObj = {
+      name: "Mel",
+      age: 88
+    };
+
+    removeProperty(testObj, "name");
+    expect(testObj.name).toBeUndefined();
+  });
+});
+*/
