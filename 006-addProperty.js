@@ -13,20 +13,18 @@ function addProperty(obj, key) {
 
 /*
 Your Code Should Pass:
-describe("getProperty", function() {
-  var obj;
-
+describe("addProperty", function() {
+  var testObj;
   beforeEach(function() {
-    obj = {
-      name: "You"
-    }
+    testObj = {};
   });
-
-  it("should return the value of the property located in the object at the passed in key", function() {
-    expect(getProperty(obj, "name")).toBe("You");
+  it("should add a property to the passed in object at the passed in key", function() {
+    addProperty(testObj, "testKey");
+    expect(testObj.testKey).toBeDefined();
   });
-  it("should return undefined when there is no property at the passed in key", function() {
-    expect(getProperty(obj, "age")).toBe(undefined);
+  it("should set the value at the passed in key to true on the passed in object", function() {
+    addProperty(testObj, "testKey");
+    expect(testObj.testKey).toBe(true);
   });
 });
 */
