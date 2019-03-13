@@ -9,19 +9,8 @@
 
 
 function getAllElementsButFirst(array) {
-  array.shift();
-  return array;
-}
-
-/* The .shift() method above mutates(changes) the array
-by removing the first element in the array.
-
-Non-mutating:
-
-function getAllElementsButFirst(array) {
   return array.slice(1);
 }
-*/
 
 
 
